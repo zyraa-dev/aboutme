@@ -1,3 +1,1512 @@
-<script>
-document.write(decodeURIComponent('%3C!DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22id%22%20data-theme%3D%22dark%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%3Ctitle%3ELixzy%20Ganzx%20%E2%80%94%20Personal%20Site%3C%2Ftitle%3E%0A%20%20%3Cmeta%20name%3D%22description%22%20content%3D%22Personal%20site%20of%20Lixzy%20Ganzx%20-%20Creative%20developer%2C%20designer%2C%20and%20digital%20builder%20based%20in%20Indonesia.%22%3E%0A%20%20%0A%20%20%3C!--%20Font%20Preconnect%20%26%20Import%20(Plus%20Jakarta%20Sans%20%26%20JetBrains%20Mono)%20--%3E%0A%20%20%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Ffonts.googleapis.com%22%3E%0A%20%20%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Ffonts.gstatic.com%22%20crossorigin%3E%0A%20%20%3Clink%20href%3D%22https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DJetBrains%2BMono%3Awght%40400%3B500%3B600%26family%3DPlus%2BJakarta%2BSans%3Awght%40400%3B500%3B600%3B700%3B800%26display%3Dswap%22%20rel%3D%22stylesheet%22%3E%0A%0A%20%20%3Cstyle%3E%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%201.%20VARIABLES%20%26%20THEMING%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20%3Aroot%20%7B%0A%20%20%20%20%20%20%2F*%20Light%20Theme%20Colors%20(Default%20Off-White%20%2F%20Natural)%20*%2F%0A%20%20%20%20%20%20--bg%3A%20%23f9f8f6%3B%0A%20%20%20%20%20%20--bg-card%3A%20%23ffffff%3B%0A%20%20%20%20%20%20--bg-secondary%3A%20%23f1efe9%3B%0A%20%20%20%20%20%20--text%3A%20%2318181b%3B%0A%20%20%20%20%20%20--text-muted%3A%20%2364748b%3B%0A%20%20%20%20%20%20--border%3A%20%23e4e4e7%3B%0A%20%20%20%20%20%20--border-hover%3A%20%23a1a1aa%3B%0A%20%20%20%20%20%20--accent%3A%20%232563eb%3B%0A%20%20%20%20%20%20--accent-soft%3A%20rgba(37%2C%2099%2C%20235%2C%200.08)%3B%0A%20%20%20%20%20%20--tag-bg%3A%20%23eae8e1%3B%0A%20%20%20%20%20%20--shadow%3A%200%204px%2020px%20-2px%20rgba(0%2C%200%2C%200%2C%200.04)%3B%0A%20%20%20%20%20%20--radius%3A%2014px%3B%0A%20%20%20%20%20%20--radius-sm%3A%208px%3B%0A%20%20%20%20%20%20--transition%3A%20all%200.25s%20cubic-bezier(0.16%2C%201%2C%200.3%2C%201)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%5Bdata-theme%3D%22dark%22%5D%20%7B%0A%20%20%20%20%20%20%2F*%20Dark%20Theme%20Colors%20(Deep%20Slate%20%2F%20Edgy%20Natural)%20*%2F%0A%20%20%20%20%20%20--bg%3A%20%230e0e11%3B%0A%20%20%20%20%20%20--bg-card%3A%20%2316161a%3B%0A%20%20%20%20%20%20--bg-secondary%3A%20%231f1f24%3B%0A%20%20%20%20%20%20--text%3A%20%23f4f4f5%3B%0A%20%20%20%20%20%20--text-muted%3A%20%23a1a1aa%3B%0A%20%20%20%20%20%20--border%3A%20%2327272a%3B%0A%20%20%20%20%20%20--border-hover%3A%20%2352525b%3B%0A%20%20%20%20%20%20--accent%3A%20%233b82f6%3B%0A%20%20%20%20%20%20--accent-soft%3A%20rgba(59%2C%20130%2C%20246%2C%200.12)%3B%0A%20%20%20%20%20%20--tag-bg%3A%20%23222227%3B%0A%20%20%20%20%20%20--shadow%3A%200%204px%2025px%20-2px%20rgba(0%2C%200%2C%200%2C%200.3)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%202.%20BASE%20%26%20RESET%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20*%2C%20*%3A%3Abefore%2C%20*%3A%3Aafter%20%7B%0A%20%20%20%20%20%20box-sizing%3A%20border-box%3B%0A%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20padding%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20html%20%7B%0A%20%20%20%20%20%20scroll-behavior%3A%20smooth%3B%0A%20%20%20%20%20%20font-size%3A%2016px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20body%20%7B%0A%20%20%20%20%20%20font-family%3A%20\'Plus%20Jakarta%20Sans\'%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20sans-serif%3B%0A%20%20%20%20%20%20background-color%3A%20var(--bg)%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20line-height%3A%201.6%3B%0A%20%20%20%20%20%20transition%3A%20background-color%200.3s%20ease%2C%20color%200.3s%20ease%3B%0A%20%20%20%20%20%20overflow-x%3A%20hidden%3B%0A%20%20%20%20%20%20-webkit-font-smoothing%3A%20antialiased%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20a%20%7B%0A%20%20%20%20%20%20color%3A%20inherit%3B%0A%20%20%20%20%20%20text-decoration%3A%20none%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20img%20%7B%0A%20%20%20%20%20%20max-width%3A%20100%25%3B%0A%20%20%20%20%20%20height%3A%20auto%3B%0A%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20max-width%3A%201080px%3B%0A%20%20%20%20%20%20margin%3A%200%20auto%3B%0A%20%20%20%20%20%20padding%3A%200%201.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20section%20%7B%0A%20%20%20%20%20%20padding%3A%205rem%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-title%20%7B%0A%20%20%20%20%20%20font-size%3A%200.875rem%3B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20text-transform%3A%20uppercase%3B%0A%20%20%20%20%20%20letter-spacing%3A%200.1em%3B%0A%20%20%20%20%20%20color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.5rem%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-heading%20%7B%0A%20%20%20%20%20%20font-size%3A%202rem%3B%0A%20%20%20%20%20%20font-weight%3A%20800%3B%0A%20%20%20%20%20%20letter-spacing%3A%20-0.03em%3B%0A%20%20%20%20%20%20margin-bottom%3A%202.5rem%3B%0A%20%20%20%20%20%20line-height%3A%201.2%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%203.%20NAVBAR%20%26%20LOGO%20AVATAR%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.navbar%20%7B%0A%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20right%3A%200%3B%0A%20%20%20%20%20%20z-index%3A%201000%3B%0A%20%20%20%20%20%20background-color%3A%20rgba(249%2C%20248%2C%20246%2C%200.85)%3B%0A%20%20%20%20%20%20backdrop-filter%3A%20blur(12px)%3B%0A%20%20%20%20%20%20-webkit-backdrop-filter%3A%20blur(12px)%3B%0A%20%20%20%20%20%20border-bottom%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%5Bdata-theme%3D%22dark%22%5D%20.navbar%20%7B%0A%20%20%20%20%20%20background-color%3A%20rgba(14%2C%2014%2C%2017%2C%200.85)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.nav-container%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20height%3A%2070px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.logo%20%7B%0A%20%20%20%20%20%20font-weight%3A%20800%3B%0A%20%20%20%20%20%20font-size%3A%201.25rem%3B%0A%20%20%20%20%20%20letter-spacing%3A%20-0.04em%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.65rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.logo-avatar%20%7B%0A%20%20%20%20%20%20width%3A%2036px%3B%0A%20%20%20%20%20%20height%3A%2036px%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20object-fit%3A%20cover%3B%0A%20%20%20%20%20%20border%3A%202px%20solid%20var(--accent)%3B%0A%20%20%20%20%20%20box-shadow%3A%200%200%2010px%20rgba(59%2C%20130%2C%20246%2C%200.25)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.logo%3Ahover%20.logo-avatar%20%7B%0A%20%20%20%20%20%20transform%3A%20scale(1.08)%20rotate(3deg)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.logo-text%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.logo-dot%20%7B%0A%20%20%20%20%20%20width%3A%206px%3B%0A%20%20%20%20%20%20height%3A%206px%3B%0A%20%20%20%20%20%20background-color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.nav-links%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%202rem%3B%0A%20%20%20%20%20%20list-style%3A%20none%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.nav-link%20%7B%0A%20%20%20%20%20%20font-size%3A%200.9rem%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.nav-link%3Ahover%20%7B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.nav-actions%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%201rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.theme-toggle%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20width%3A%2040px%3B%0A%20%20%20%20%20%20height%3A%2040px%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.theme-toggle%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border-hover)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-1px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hamburger%20%7B%0A%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20background%3A%20none%3B%0A%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20padding%3A%200.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20Mobile%20Drawer%20*%2F%0A%20%20%20%20.mobile-menu%20%7B%0A%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20top%3A%2070px%3B%0A%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20right%3A%200%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border-bottom%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20padding%3A%201.5rem%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20gap%3A%201.25rem%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-150%25)%3B%0A%20%20%20%20%20%20transition%3A%20transform%200.3s%20cubic-bezier(0.16%2C%201%2C%200.3%2C%201)%3B%0A%20%20%20%20%20%20z-index%3A%20999%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.mobile-menu.active%20%7B%0A%20%20%20%20%20%20transform%3A%20translateY(0)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.mobile-menu%20a%20%7B%0A%20%20%20%20%20%20font-size%3A%201.1rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%204.%20HERO%20SECTION%20WITH%20SPLIT%20BLENDED%20BACKGROUND%20%26%20LANDSCAPE%20PHOTO%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.hero%20%7B%0A%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20padding-top%3A%209rem%3B%0A%20%20%20%20%20%20padding-bottom%3A%206rem%3B%0A%20%20%20%20%20%20min-height%3A%2085vh%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-bg-photo%20%7B%0A%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20right%3A%200%3B%0A%20%20%20%20%20%20width%3A%2055%25%3B%0A%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20background-image%3A%20url(\'309307.jpg\')%3B%0A%20%20%20%20%20%20background-size%3A%20cover%3B%0A%20%20%20%20%20%20background-position%3A%20center%20top%3B%0A%20%20%20%20%20%20z-index%3A%200%3B%0A%20%20%20%20%20%20-webkit-mask-image%3A%20linear-gradient(to%20left%2C%20rgba(0%2C%200%2C%200%2C%200.85)%2020%25%2C%20rgba(0%2C%200%2C%200%2C%200)%20100%25)%3B%0A%20%20%20%20%20%20mask-image%3A%20linear-gradient(to%20left%2C%20rgba(0%2C%200%2C%200%2C%200.85)%2020%25%2C%20rgba(0%2C%200%2C%200%2C%200)%20100%25)%3B%0A%20%20%20%20%20%20filter%3A%20contrast(1.05)%20brightness(0.9)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-bg-shade%20%7B%0A%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20inset%3A%200%3B%0A%20%20%20%20%20%20background%3A%20linear-gradient(to%20right%2C%20var(--bg)%2040%25%2C%20transparent%20100%25)%3B%0A%20%20%20%20%20%20z-index%3A%201%3B%0A%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero%20.container%20%7B%0A%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%202%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.landscape-photo%20%7B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20aspect-ratio%3A%2016%20%2F%209%3B%0A%20%20%20%20%20%20max-height%3A%20380px%3B%0A%20%20%20%20%20%20object-fit%3A%20cover%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20margin-bottom%3A%202rem%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-grid%20%7B%0A%20%20%20%20%20%20display%3A%20grid%3B%0A%20%20%20%20%20%20grid-template-columns%3A%201.2fr%200.8fr%3B%0A%20%20%20%20%20%20gap%3A%203.5rem%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.badges-row%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20%20%20gap%3A%200.75rem%3B%0A%20%20%20%20%20%20margin-bottom%3A%201.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.badge%20%7B%0A%20%20%20%20%20%20display%3A%20inline-flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.5rem%3B%0A%20%20%20%20%20%20padding%3A%200.4rem%200.85rem%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20100px%3B%0A%20%20%20%20%20%20font-size%3A%200.8rem%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20backdrop-filter%3A%20blur(8px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.badge-dot%20%7B%0A%20%20%20%20%20%20width%3A%208px%3B%0A%20%20%20%20%20%20height%3A%208px%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20background-color%3A%20%23a1a1aa%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20INDIKATOR%20STATUS%20REAL-TIME%20(HIJAU%20%2F%20MERAH%20%2F%20KUNING)%20*%2F%0A%20%20%20%20.status-online%20%7B%0A%20%20%20%20%20%20background-color%3A%20%2322c55e%20!important%3B%0A%20%20%20%20%20%20box-shadow%3A%200%200%200%203px%20rgba(34%2C%20197%2C%2094%2C%200.25)%20!important%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.status-offline%20%7B%0A%20%20%20%20%20%20background-color%3A%20%23ef4444%20!important%3B%0A%20%20%20%20%20%20box-shadow%3A%200%200%200%203px%20rgba(239%2C%2068%2C%2068%2C%200.25)%20!important%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.status-idle%20%7B%0A%20%20%20%20%20%20background-color%3A%20%23f59e0b%20!important%3B%0A%20%20%20%20%20%20box-shadow%3A%200%200%200%203px%20rgba(245%2C%20158%2C%2011%2C%200.25)%20!important%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20REAL-TIME%20CLOCK%20WIDGET%20*%2F%0A%20%20%20%20.clock-widget%20%7B%0A%20%20%20%20%20%20display%3A%20inline-flex%3B%0A%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20gap%3A%200.2rem%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20padding%3A%200.75rem%201.25rem%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20margin-bottom%3A%201.5rem%3B%0A%20%20%20%20%20%20backdrop-filter%3A%20blur(10px)%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%20%20width%3A%20fit-content%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.clock-time%20%7B%0A%20%20%20%20%20%20font-size%3A%201.4rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20letter-spacing%3A%200.05em%3B%0A%20%20%20%20%20%20line-height%3A%201%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.clock-date%20%7B%0A%20%20%20%20%20%20font-size%3A%200.75rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20text-transform%3A%20uppercase%3B%0A%20%20%20%20%20%20letter-spacing%3A%200.05em%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-greeting%20%7B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20font-size%3A%200.9rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20letter-spacing%3A%200.05em%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-name%20%7B%0A%20%20%20%20%20%20font-size%3A%20Clamp(2.75rem%2C%205vw%2C%204.25rem)%3B%0A%20%20%20%20%20%20font-weight%3A%20800%3B%0A%20%20%20%20%20%20line-height%3A%201.05%3B%0A%20%20%20%20%20%20letter-spacing%3A%20-0.04em%3B%0A%20%20%20%20%20%20margin-bottom%3A%201.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-tagline%20%7B%0A%20%20%20%20%20%20font-size%3A%201.15rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20max-width%3A%20520px%3B%0A%20%20%20%20%20%20margin-bottom%3A%202rem%3B%0A%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.hero-cta%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20%20%20gap%3A%201rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.btn%20%7B%0A%20%20%20%20%20%20display%3A%20inline-flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.5rem%3B%0A%20%20%20%20%20%20padding%3A%200.85rem%201.6rem%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20font-size%3A%200.95rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.btn-primary%20%7B%0A%20%20%20%20%20%20background-color%3A%20var(--text)%3B%0A%20%20%20%20%20%20color%3A%20var(--bg)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--text)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.btn-primary%3Ahover%20%7B%0A%20%20%20%20%20%20opacity%3A%200.9%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-2px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.btn-secondary%20%7B%0A%20%20%20%20%20%20background-color%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.btn-secondary%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border-hover)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-2px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%205.%20FLOATING%20MUSIC%20PLAYER%20WIDGET%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.music-widget%20%7B%0A%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20bottom%3A%2024px%3B%0A%20%20%20%20%20%20right%3A%2024px%3B%0A%20%20%20%20%20%20z-index%3A%201000%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.75rem%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20padding%3A%200.6rem%201rem%200.6rem%200.75rem%3B%0A%20%20%20%20%20%20border-radius%3A%20100px%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%20%20backdrop-filter%3A%20blur(12px)%3B%0A%20%20%20%20%20%20-webkit-backdrop-filter%3A%20blur(12px)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.music-btn%20%7B%0A%20%20%20%20%20%20width%3A%2036px%3B%0A%20%20%20%20%20%20height%3A%2036px%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20background%3A%20var(--accent)%3B%0A%20%20%20%20%20%20color%3A%20%23ffffff%3B%0A%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%20%20flex-shrink%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.music-btn%3Ahover%20%7B%0A%20%20%20%20%20%20transform%3A%20scale(1.08)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.music-info%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.music-title%20%7B%0A%20%20%20%20%20%20font-size%3A%200.8rem%3B%0A%20%20%20%20%20%20font-weight%3A%20700%3B%0A%20%20%20%20%20%20line-height%3A%201.1%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.music-status%20%7B%0A%20%20%20%20%20%20font-size%3A%200.7rem%3B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.sound-wave%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20flex-end%3B%0A%20%20%20%20%20%20gap%3A%202px%3B%0A%20%20%20%20%20%20height%3A%2012px%3B%0A%20%20%20%20%20%20margin-left%3A%200.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.sound-wave%20span%20%7B%0A%20%20%20%20%20%20width%3A%202px%3B%0A%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20background-color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20border-radius%3A%202px%3B%0A%20%20%20%20%20%20animation%3A%20wave%201.2s%20ease-in-out%20infinite%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.sound-wave%20span%3Anth-child(2)%20%7B%20animation-delay%3A%200.2s%3B%20%7D%0A%20%20%20%20.sound-wave%20span%3Anth-child(3)%20%7B%20animation-delay%3A%200.4s%3B%20%7D%0A%0A%20%20%20%20.music-widget.paused%20.sound-wave%20span%20%7B%0A%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20height%3A%203px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%40keyframes%20wave%20%7B%0A%20%20%20%20%20%200%25%2C%20100%25%20%7B%20height%3A%203px%3B%20%7D%0A%20%20%20%20%20%2050%25%20%7B%20height%3A%2012px%3B%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%206.%20ABOUT%20ME%20SECTION%20%26%20FOTO%20SKALA%201%3A1%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.photo-1x1-wrapper%20%7B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20max-width%3A%20280px%3B%0A%20%20%20%20%20%20aspect-ratio%3A%201%20%2F%201%3B%0A%20%20%20%20%20%20margin%3A%200%20auto%202.5rem%20auto%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.photo-1x1-wrapper%20img%20%7B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20object-fit%3A%20cover%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.about-box%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20padding%3A%202.5rem%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.about-bio%20%7B%0A%20%20%20%20%20%20font-size%3A%201.2rem%3B%0A%20%20%20%20%20%20line-height%3A%201.7%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20margin-bottom%3A%202.5rem%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.info-grid%20%7B%0A%20%20%20%20%20%20display%3A%20grid%3B%0A%20%20%20%20%20%20grid-template-columns%3A%20repeat(auto-fit%2C%20minmax(200px%2C%201fr))%3B%0A%20%20%20%20%20%20gap%3A%201.25rem%3B%0A%20%20%20%20%20%20margin-bottom%3A%202rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.info-card%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-secondary)%3B%0A%20%20%20%20%20%20padding%3A%201.25rem%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20transparent%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.info-card%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.info-label%20%7B%0A%20%20%20%20%20%20font-size%3A%200.8rem%3B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20text-transform%3A%20uppercase%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.info-value%20%7B%0A%20%20%20%20%20%20font-weight%3A%20700%3B%0A%20%20%20%20%20%20font-size%3A%201rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.personal-note%20%7B%0A%20%20%20%20%20%20font-size%3A%200.95rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20border-left%3A%202px%20solid%20var(--accent)%3B%0A%20%20%20%20%20%20padding-left%3A%201rem%3B%0A%20%20%20%20%20%20margin-top%3A%201.5rem%3B%0A%20%20%20%20%20%20font-style%3A%20italic%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%207.%20INTERESTS%20%26%20SKILLS%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.interests-grid%20%7B%0A%20%20%20%20%20%20display%3A%20grid%3B%0A%20%20%20%20%20%20grid-template-columns%3A%20repeat(auto-fill%2C%20minmax(300px%2C%201fr))%3B%0A%20%20%20%20%20%20gap%3A%201.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.interest-card%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20padding%3A%201.5rem%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20flex-start%3B%0A%20%20%20%20%20%20gap%3A%201.25rem%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.interest-card%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border-hover)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-3px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.interest-icon%20%7B%0A%20%20%20%20%20%20width%3A%2044px%3B%0A%20%20%20%20%20%20height%3A%2044px%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-secondary)%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20flex-shrink%3A%200%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.interest-title%20%7B%0A%20%20%20%20%20%20font-weight%3A%20700%3B%0A%20%20%20%20%20%20font-size%3A%201.05rem%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.interest-desc%20%7B%0A%20%20%20%20%20%20font-size%3A%200.875rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20Skills%20Chips%20*%2F%0A%20%20%20%20.skills-container%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20padding%3A%202rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.skills-group%20%7B%0A%20%20%20%20%20%20margin-bottom%3A%201.75rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.skills-group%3Alast-child%20%7B%0A%20%20%20%20%20%20margin-bottom%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.skills-group-title%20%7B%0A%20%20%20%20%20%20font-size%3A%200.85rem%3B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.85rem%3B%0A%20%20%20%20%20%20text-transform%3A%20uppercase%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.chips-flex%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20%20%20gap%3A%200.75rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.chip%20%7B%0A%20%20%20%20%20%20background%3A%20var(--tag-bg)%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20padding%3A%200.5rem%201rem%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20font-size%3A%200.9rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20transparent%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%20%20display%3A%20inline-flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.chip%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border-hover)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-1px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%208.%20JOURNEY%20%2F%20TIMELINE%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.timeline%20%7B%0A%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20max-width%3A%20700px%3B%0A%20%20%20%20%20%20margin%3A%200%20auto%3B%0A%20%20%20%20%20%20padding-left%3A%201.5rem%3B%0A%20%20%20%20%20%20border-left%3A%202px%20solid%20var(--border)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-item%20%7B%0A%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20margin-bottom%3A%202.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-item%3Alast-child%20%7B%0A%20%20%20%20%20%20margin-bottom%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-dot%20%7B%0A%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20left%3A%20calc(-1.5rem%20-%206px)%3B%0A%20%20%20%20%20%20top%3A%204px%3B%0A%20%20%20%20%20%20width%3A%2010px%3B%0A%20%20%20%20%20%20height%3A%2010px%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20background%3A%20var(--accent)%3B%0A%20%20%20%20%20%20border%3A%203px%20solid%20var(--bg)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-year%20%7B%0A%20%20%20%20%20%20font-family%3A%20\'JetBrains%20Mono\'%2C%20monospace%3B%0A%20%20%20%20%20%20font-size%3A%200.85rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.25rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-title%20%7B%0A%20%20%20%20%20%20font-size%3A%201.15rem%3B%0A%20%20%20%20%20%20font-weight%3A%20700%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.35rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.timeline-desc%20%7B%0A%20%20%20%20%20%20font-size%3A%200.925rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%209.%20FUN%20FACTS%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.fun-facts-grid%20%7B%0A%20%20%20%20%20%20display%3A%20grid%3B%0A%20%20%20%20%20%20grid-template-columns%3A%20repeat(auto-fill%2C%20minmax(220px%2C%201fr))%3B%0A%20%20%20%20%20%20gap%3A%201rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.fact-card%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20padding%3A%201.25rem%3B%0A%20%20%20%20%20%20font-size%3A%200.95rem%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.75rem%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.fact-card%3Ahover%20%7B%0A%20%20%20%20%20%20border-color%3A%20var(--border-hover)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-2px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.fact-icon%20%7B%0A%20%20%20%20%20%20color%3A%20var(--accent)%3B%0A%20%20%20%20%20%20flex-shrink%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2010.%20CONTACT%20%2F%20CONNECT%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.contact-box%20%7B%0A%20%20%20%20%20%20background%3A%20var(--bg-card)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius)%3B%0A%20%20%20%20%20%20padding%3A%203.5rem%202rem%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20box-shadow%3A%20var(--shadow)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.contact-title%20%7B%0A%20%20%20%20%20%20font-size%3A%20Clamp(2rem%2C%204vw%2C%202.75rem)%3B%0A%20%20%20%20%20%20font-weight%3A%20800%3B%0A%20%20%20%20%20%20letter-spacing%3A%20-0.03em%3B%0A%20%20%20%20%20%20margin-bottom%3A%200.75rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.contact-desc%20%7B%0A%20%20%20%20%20%20font-size%3A%201.05rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%20%20max-width%3A%20480px%3B%0A%20%20%20%20%20%20margin%3A%200%20auto%202.5rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.social-grid%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%201rem%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.social-btn%20%7B%0A%20%20%20%20%20%20display%3A%20inline-flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%200.6rem%3B%0A%20%20%20%20%20%20padding%3A%200.8rem%201.4rem%3B%0A%20%20%20%20%20%20background%3A%20var(--bg-secondary)%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20border-radius%3A%20var(--radius-sm)%3B%0A%20%20%20%20%20%20font-size%3A%200.95rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var(--text)%3B%0A%20%20%20%20%20%20transition%3A%20var(--transition)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.social-btn%3Ahover%20%7B%0A%20%20%20%20%20%20background%3A%20var(--text)%3B%0A%20%20%20%20%20%20color%3A%20var(--bg)%3B%0A%20%20%20%20%20%20border-color%3A%20var(--text)%3B%0A%20%20%20%20%20%20transform%3A%20translateY(-2px)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2011.%20FOOTER%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20footer%20%7B%0A%20%20%20%20%20%20padding%3A%202.5rem%200%205rem%200%3B%0A%20%20%20%20%20%20border-top%3A%201px%20solid%20var(--border)%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%200.875rem%3B%0A%20%20%20%20%20%20color%3A%20var(--text-muted)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.footer-content%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20gap%3A%200.5rem%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2012.%20ANIMATIONS%20%26%20UTILS%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20.fade-up%20%7B%0A%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20transform%3A%20translateY(24px)%3B%0A%20%20%20%20%20%20transition%3A%20opacity%200.6s%20cubic-bezier(0.16%2C%201%2C%200.3%2C%201)%2C%20transform%200.6s%20cubic-bezier(0.16%2C%201%2C%200.3%2C%201)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.fade-up.visible%20%7B%0A%20%20%20%20%20%20opacity%3A%201%3B%0A%20%20%20%20%20%20transform%3A%20translateY(0)%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F*%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2013.%20RESPONSIVE%20BREAKPOINTS%0A%20%20%20%20%20%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20*%2F%0A%20%20%20%20%40media%20(max-width%3A%20868px)%20%7B%0A%20%20%20%20%20%20.hero-bg-photo%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20opacity%3A%200.25%3B%0A%20%20%20%20%20%20%20%20-webkit-mask-image%3A%20linear-gradient(to%20bottom%2C%20rgba(0%2C%200%2C%200%2C%201)%200%25%2C%20rgba(0%2C%200%2C%200%2C%200)%20100%25)%3B%0A%20%20%20%20%20%20%20%20mask-image%3A%20linear-gradient(to%20bottom%2C%20rgba(0%2C%200%2C%200%2C%201)%200%25%2C%20rgba(0%2C%200%2C%200%2C%200)%20100%25)%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.hero-grid%20%7B%0A%20%20%20%20%20%20%20%20grid-template-columns%3A%201fr%3B%0A%20%20%20%20%20%20%20%20gap%3A%202.5rem%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.nav-links%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.hamburger%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20%40media%20(max-width%3A%20576px)%20%7B%0A%20%20%20%20%20%20section%20%7B%0A%20%20%20%20%20%20%20%20padding%3A%203.5rem%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.hero%20%7B%0A%20%20%20%20%20%20%20%20padding-top%3A%207rem%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.about-box%2C%20.skills-container%2C%20.contact-box%20%7B%0A%20%20%20%20%20%20%20%20padding%3A%201.75rem%201.25rem%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.hero-cta%20%7B%0A%20%20%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.btn%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.social-grid%20%7B%0A%20%20%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.social-btn%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.music-widget%20%7B%0A%20%20%20%20%20%20%20%20bottom%3A%2016px%3B%0A%20%20%20%20%20%20%20%20right%3A%2016px%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%0A%20%20%3C!--%20ELEMENT%20AUDIO%20UNTUK%20MUSIK%20%26%20AUTOPLAY%20--%3E%0A%20%20%3Caudio%20id%3D%22bgMusic%22%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2Fjzjb75.mp3%22%20loop%20preload%3D%22auto%22%3E%3C%2Faudio%3E%0A%0A%20%20%3C!--%20FLOATING%20MUSIC%20PLAYER%20WIDGET%20--%3E%0A%20%20%3Cdiv%20class%3D%22music-widget%20paused%22%20id%3D%22musicWidget%22%3E%0A%20%20%20%20%3Cbutton%20class%3D%22music-btn%22%20id%3D%22musicToggleBtn%22%20aria-label%3D%22Play%2FPause%20Music%22%3E%0A%20%20%20%20%20%20%3C!--%20Play%20Icon%20--%3E%0A%20%20%20%20%20%20%3Csvg%20id%3D%22playIcon%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpolygon%20points%3D%225%203%2019%2012%205%2021%205%203%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%3C!--%20Pause%20Icon%20--%3E%0A%20%20%20%20%20%20%3Csvg%20id%3D%22pauseIcon%22%20style%3D%22display%3Anone%3B%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Crect%20x%3D%226%22%20y%3D%224%22%20width%3D%224%22%20height%3D%2216%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%224%22%20width%3D%224%22%20height%3D%2216%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%3Cdiv%20class%3D%22music-info%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22music-title%22%3EBackground%20Track%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22music-status%22%20id%3D%22musicStatusText%22%3EPAUSED%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22sound-wave%22%3E%0A%20%20%20%20%20%20%3Cspan%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%3E%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C!--%20NAVBAR%20--%3E%0A%20%20%3Cnav%20class%3D%22navbar%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20nav-container%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C!--%20LOGO%20DENGAN%20FOTO%20BULAT%20DI%20SEBELAH%20KIRI%20NAMA%20LIXZY%20--%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2Fxegmxa.png%22%20alt%3D%22Lixzy%20Profile%20Avatar%22%20class%3D%22logo-avatar%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22logo-text%22%3ELIXZY%3Cspan%20class%3D%22logo-dot%22%3E%3C%2Fspan%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%3Cul%20class%3D%22nav-links%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23home%22%20class%3D%22nav-link%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23about%22%20class%3D%22nav-link%22%3EAbout%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23interests%22%20class%3D%22nav-link%22%3EInterests%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23skills%22%20class%3D%22nav-link%22%3ESkills%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23contact%22%20class%3D%22nav-link%22%3EContact%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22nav-actions%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22theme-toggle%22%20id%3D%22themeToggle%22%20aria-label%3D%22Toggle%20Theme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Sun%20Icon%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20id%3D%22sunIcon%22%20style%3D%22display%3Anone%3B%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%224%22%2F%3E%3Cpath%20d%3D%22M12%202v2%22%2F%3E%3Cpath%20d%3D%22M12%2020v2%22%2F%3E%3Cpath%20d%3D%22m4.93%204.93%201.41%201.41%22%2F%3E%3Cpath%20d%3D%22m17.66%2017.66%201.41%201.41%22%2F%3E%3Cpath%20d%3D%22M2%2012h2%22%2F%3E%3Cpath%20d%3D%22M20%2012h2%22%2F%3E%3Cpath%20d%3D%22m6.34%2017.66-1.41%201.41%22%2F%3E%3Cpath%20d%3D%22m19.07%204.93-1.41%201.41%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Moon%20Icon%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20id%3D%22moonIcon%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%203a6%206%200%200%200%209%209%209%209%200%201%201-9-9Z%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22hamburger%22%20id%3D%22menuToggle%22%20aria-label%3D%22Open%20Menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%2212%22%20y2%3D%2212%22%2F%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%226%22%20y2%3D%226%22%2F%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%2218%22%20y2%3D%2218%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fnav%3E%0A%0A%20%20%3C!--%20MOBILE%20MENU%20DRAWER%20--%3E%0A%20%20%3Cdiv%20class%3D%22mobile-menu%22%20id%3D%22mobileMenu%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%23home%22%20class%3D%22mobile-link%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22%23about%22%20class%3D%22mobile-link%22%3EAbout%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22%23interests%22%20class%3D%22mobile-link%22%3EInterests%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22%23skills%22%20class%3D%22mobile-link%22%3ESkills%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22%23contact%22%20class%3D%22mobile-link%22%3EContact%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C!--%20HERO%20SECTION%20WITH%20SPLIT%20BLENDED%20BACKGROUND%20--%3E%0A%20%20%3Csection%20class%3D%22hero%22%20id%3D%22home%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22hero-bg-photo%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22hero-bg-shade%22%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22container%20hero-grid%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22hero-content%20fade-up%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C!--%20FOTO%20LANDSCAPE%20LIXZY%20STORE%20--%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2F2z9cy0.png%22%20alt%3D%22Lixzy%20Store%20Landscape%20Banner%22%20class%3D%22landscape-photo%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22badges-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20INDIKATOR%20REAL-TIME%20STATUS%20DEVICE%20(ONLINE%2FOFFLINE)%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge%22%20id%3D%22liveStatusBadge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge-dot%20status-offline%22%20id%3D%22statusDot%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22statusText%22%3EChecking...%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge-dot%20status-online%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Available%20for%20projects%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%93%8D%20Based%20in%20Indonesia%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C!--%20REAL-TIME%20CLOCK%20%26%20DATE%20WIDGET%20--%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22clock-widget%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22realtimeClock%22%20class%3D%22clock-time%22%3E00%3A00%3A00%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22realtimeDate%22%20class%3D%22clock-date%22%3ELoading%20date...%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22hero-greeting%22%3EHELLO%2C%20I\'M%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22hero-name%22%3ELIXZY%20GANZX%3C%2Fh1%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22hero-tagline%22%3Ejust%20a%20person%20building%20things%2C%20exploring%20ideas%2C%20and%20enjoying%20the%20process.%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22hero-cta%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23about%22%20class%3D%22btn%20btn-primary%22%3EAbout%20Me%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23contact%22%20class%3D%22btn%20btn-secondary%22%3EContact%20Me%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20ABOUT%20ME%20--%3E%0A%20%20%3Csection%20id%3D%22about%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E01%20%2F%2F%20ABOUT%20ME%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22section-heading%22%3EWHO%20I%20AM%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3C!--%20FOTO%20SKALA%201%3A1%20DI%20ATAS%20ABOUT%20ME%20--%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22photo-1x1-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A%2F%2Ffiles.catbox.moe%2F5jc6cj.png%22%20alt%3D%22Profile%201%3A1%20Photo%22%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22about-box%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22about-bio%22%3E%0A%20%20%20%20%20%20%20%20%20%20I\'m%20a%20creative%20person%20who%20enjoys%20exploring%20technology%2C%20design%2C%20digital%20projects%2C%20and%20new%20ideas.%20I%20like%20turning%20simple%20ideas%20into%20something%20useful%2C%20interesting%2C%20and%20visually%20clean.%0A%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-grid%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-label%22%3EName%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-value%22%3EPristia%20Gunawan%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-label%22%3ELocation%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-value%22%3EIndonesia%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-label%22%3EFocus%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-value%22%3EDigital%20%26%20Creative%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-label%22%3EInterests%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-value%22%3ETech%2C%20Design%2C%20Editing%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22personal-note%22%3E%0A%20%20%20%20%20%20%20%20%20%20%22I%20believe%20good%20output%20comes%20from%20curiosity%2C%20iteration%2C%20and%20keeping%20things%20simple%20rather%20than%20overcomplicating.%22%0A%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20MY%20INTERESTS%20--%3E%0A%20%20%3Csection%20id%3D%22interests%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E02%20%2F%2F%20INTERESTS%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22section-heading%22%3EWHAT%20I%20DO%20%26%20EXPLORE%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22interests-grid%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%2216%2018%2022%2012%2016%206%22%2F%3E%3Cpolyline%20points%3D%228%206%202%2012%208%2018%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3EWeb%20Development%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3EBuilding%20responsive%2C%20clean%2C%20and%20functional%20websites%20with%20modern%20standards.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2019l7-7%203%203-7%207-3-3z%22%2F%3E%3Cpath%20d%3D%22M18%2013l-1.5-7.5L2%202l3.5%2014.5L13%2018l5-5z%22%2F%3E%3Cpath%20d%3D%22M2%202l7.5%207.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3EGraphic%20Design%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3ECrafting%20clean%20layouts%2C%20digital%20posters%2C%20and%20visual%20identities.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolygon%20points%3D%2223%207%2016%2012%2023%2017%2023%207%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%225%22%20width%3D%2215%22%20height%3D%2214%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3EVideo%20Editing%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3EPiecing%20together%20engaging%20video%20clips%20with%20aesthetic%20pacing%20and%20atmosphere.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%222%22%20y%3D%223%22%20width%3D%2220%22%20height%3D%2214%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%3Cline%20x1%3D%228%22%20y1%3D%2221%22%20x2%3D%2216%22%20y2%3D%2221%22%2F%3E%3Cline%20x1%3D%2212%22%20y1%3D%2217%22%20x2%3D%2212%22%20y2%3D%2221%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3ETechnology%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3EKeeping%20up%20with%20new%20tools%2C%20software%20updates%2C%20and%20modern%20tech%20workflows.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M22%2019a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2h5l2%203h9a2%202%200%200%201%202%202z%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3EDigital%20Projects%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3EExperimenting%20with%20interactive%20ideas%2C%20mini%20web%20apps%2C%20and%20digital%20assets.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22interest-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2020h9%22%2F%3E%3Cpath%20d%3D%22M16.5%203.5a2.121%202.121%200%200%201%203%203L7%2019l-4%201%201-4L16.5%203.5z%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22interest-title%22%3ECreative%20Content%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22interest-desc%22%3ECreating%20social%20media%20media%20pieces%2C%20graphics%2C%20and%20simple%20storytelling.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20SKILLS%20--%3E%0A%20%20%3Csection%20id%3D%22skills%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E03%20%2F%2F%20SKILLS%20%26%20TOOLS%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22section-heading%22%3EMY%20TOOLKIT%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22skills-container%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22skills-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22skills-group-title%22%3E%2F%2F%20Development%20%26%20Web%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22chips-flex%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EHTML5%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3ECSS3%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EJavaScript%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EResponsive%20Layouts%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22skills-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22skills-group-title%22%3E%2F%2F%20Design%20%26%20Creative%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22chips-flex%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EUI%20Design%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EGraphic%20Design%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EVideo%20Editing%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3EColor%20Theory%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chip%22%3ETypography%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20MY%20JOURNEY%20--%3E%0A%20%20%3Csection%20id%3D%22journey%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E04%20%2F%2F%20EXPERIENCE%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22section-heading%22%3EMY%20JOURNEY%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-dot%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-year%22%3E2024%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22timeline-title%22%3EExploring%20Digital%20Creativity%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22timeline-desc%22%3EStarted%20experimenting%20with%20graphic%20design%2C%20basic%20video%20editing%2C%20and%20digital%20content%20tools.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-dot%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-year%22%3E2025%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22timeline-title%22%3ELearning%20Web%20Development%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22timeline-desc%22%3EDived%20into%20front-end%20foundations%3A%20HTML%2C%20CSS%2C%20JavaScript%2C%20and%20responsive%20design%20principles.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-dot%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22timeline-year%22%3E2026%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22timeline-title%22%3EBuilding%20Personal%20Projects%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22timeline-desc%22%3EActively%20crafting%20custom%20web%20apps%2C%20portfolio%20designs%2C%20and%20exploring%20full%20project%20workflows.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20FUN%20FACTS%20--%3E%0A%20%20%3Csection%20id%3D%22fun-facts%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E05%20%2F%2F%20RANDOM%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22section-heading%22%3EFUN%20FACTS%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fun-facts-grid%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fact-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20class%3D%22fact-icon%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M9%2018V5l12-2v13%22%2F%3E%3Ccircle%20cx%3D%226%22%20cy%3D%2218%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2216%22%20r%3D%223%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3Eprobably%20listening%20to%20music%20while%20working%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fact-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20class%3D%22fact-icon%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M12%2020h9%22%2F%3E%3Cpath%20d%3D%22M16.5%203.5a2.121%202.121%200%200%201%203%203L7%2019l-4%201%201-4L16.5%203.5z%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3Elikes%20clean%20design%20%26%20subtle%20details%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fact-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20class%3D%22fact-icon%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M12%208v4l3%203%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3Ealways%20trying%20something%20new%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fact-card%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20class%3D%22fact-icon%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M18%208h1a4%204%200%200%201%200%208h-1%22%2F%3E%3Cpath%20d%3D%22M2%208h16v9a4%204%200%200%201-4%204H6a4%204%200%200%201-4-4V8z%22%2F%3E%3Cline%20x1%3D%226%22%20y1%3D%221%22%20x2%3D%226%22%20y2%3D%224%22%2F%3E%3Cline%20x1%3D%2210%22%20y1%3D%221%22%20x2%3D%2210%22%20y2%3D%224%22%2F%3E%3Cline%20x1%3D%2214%22%20y1%3D%221%22%20x2%3D%2214%22%20y2%3D%224%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3Ecoffee%20%2B%20late%20night%20ideas%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20SOCIAL%20%2F%20CONTACT%20--%3E%0A%20%20%3Csection%20id%3D%22contact%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20fade-up%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22contact-box%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22contact-title%22%3ELET\'S%20CONNECT.%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22contact-desc%22%3EHave%20an%20idea%2C%20project%2C%20or%20just%20want%20to%20say%20hi%3F%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22social-grid%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwa.me%2FlixzyXyz%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%20class%3D%22social-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M22%2016.92v3a2%202%200%200%201-2.18%202%2019.79%2019.79%200%200%201-8.63-3.07%2019.5%2019.5%200%200%201-6-6%2019.79%2019.79%200%200%201-3.07-8.67A2%202%200%200%201%204.11%202h3a2%202%200%200%201%202%201.72%2012.84%2012.84%200%200%200%20.7%202.81%202%202%200%200%201-.45%202.11L8.09%209.91a16%2016%200%200%200%206%206l1.27-1.27a2%202%200%200%201%202.11-.45%2012.84%2012.84%200%200%200%202.81.7A2%202%200%200%201%2022%2016.92z%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20WhatsApp%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Finstagram.com%2Flixzy.dev%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%20class%3D%22social-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%225%22%20ry%3D%225%22%2F%3E%3Cpath%20d%3D%22M16%2011.37A4%204%200%201%201%2012.63%208%204%204%200%200%201%2016%2011.37z%22%2F%3E%3Cline%20x1%3D%2217.5%22%20y1%3D%226.5%22%20x2%3D%2217.51%22%20y2%3D%226.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Instagram%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Ftiktok.com%2Flixzynotdev%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%20class%3D%22social-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M9%2012a4%204%200%201%200%204%204V4a5%205%200%200%200%205%205%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20TikTok%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fzyraa-dev%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%20class%3D%22social-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M9%2019c-5%201.5-5-2.5-7-3m14%206v-3.87a3.37%203.37%200%200%200-.94-2.61c3.14-.35%206.44-1.54%206.44-7A5.44%205.44%200%200%200%2020%204.77%205.07%205.07%200%200%200%2019.91%201S18.73.65%2016%202.48a13.38%2013.38%200%200%200-7%200C6.27.65%205.09%201%205.09%201A5.07%205.07%200%200%200%205%204.77a5.44%205.44%200%200%200-1.5%203.78c0%205.42%203.3%206.61%206.44%207A3.37%203.37%200%200%200%209%2018.13V22%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20GitHub%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22lixzyganz5%40gmail.com%22%20class%3D%22social-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M4%204h16c1.1%200%202%20.9%202%202v12c0%201.1-.9%202-2%202H4c-1.1%200-2-.9-2-2V6c0-1.1.9-2%202-2z%22%2F%3E%3Cpolyline%20points%3D%2222%2C6%2012%2C13%202%2C6%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Email%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fsection%3E%0A%0A%20%20%3C!--%20FOOTER%20--%3E%0A%20%20%3Cfooter%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20footer-content%22%3E%0A%20%20%20%20%20%20%3Cp%3E%C2%A9%202026%20Lixzy%20Ganzx%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3Emade%20with%20curiosity%20%26%20a%20little%20caffeine.%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Ffooter%3E%0A%0A%20%20%3C!--%20JAVASCRIPT%20--%3E%0A%20%20%3Cscript%3E%0A%20%20%20%20document.addEventListener(\'DOMContentLoaded\'%2C%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%2F%2F%201.%20Dark%2FLight%20Mode%20Switcher%0A%20%20%20%20%20%20const%20themeToggle%20%3D%20document.getElementById(\'themeToggle\')%3B%0A%20%20%20%20%20%20const%20sunIcon%20%3D%20document.getElementById(\'sunIcon\')%3B%0A%20%20%20%20%20%20const%20moonIcon%20%3D%20document.getElementById(\'moonIcon\')%3B%0A%20%20%20%20%20%20const%20htmlEl%20%3D%20document.documentElement%3B%0A%0A%20%20%20%20%20%20const%20savedTheme%20%3D%20localStorage.getItem(\'lh_theme\')%3B%0A%20%20%20%20%20%20if%20(savedTheme)%20%7B%0A%20%20%20%20%20%20%20%20htmlEl.setAttribute(\'data-theme\'%2C%20savedTheme)%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20htmlEl.setAttribute(\'data-theme\'%2C%20\'dark\')%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20updateThemeIcons()%3B%0A%0A%20%20%20%20%20%20themeToggle.addEventListener(\'click\'%2C%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20const%20currentTheme%20%3D%20htmlEl.getAttribute(\'data-theme\')%3B%0A%20%20%20%20%20%20%20%20const%20newTheme%20%3D%20currentTheme%20%3D%3D%3D%20\'dark\'%20%3F%20\'light\'%20%3A%20\'dark\'%3B%0A%20%20%20%20%20%20%20%20htmlEl.setAttribute(\'data-theme\'%2C%20newTheme)%3B%0A%20%20%20%20%20%20%20%20localStorage.setItem(\'lh_theme\'%2C%20newTheme)%3B%0A%20%20%20%20%20%20%20%20updateThemeIcons()%3B%0A%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20function%20updateThemeIcons()%20%7B%0A%20%20%20%20%20%20%20%20const%20currentTheme%20%3D%20htmlEl.getAttribute(\'data-theme\')%3B%0A%20%20%20%20%20%20%20%20if%20(currentTheme%20%3D%3D%3D%20\'dark\')%20%7B%0A%20%20%20%20%20%20%20%20%20%20sunIcon.style.display%20%3D%20\'block\'%3B%0A%20%20%20%20%20%20%20%20%20%20moonIcon.style.display%20%3D%20\'none\'%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20sunIcon.style.display%20%3D%20\'none\'%3B%0A%20%20%20%20%20%20%20%20%20%20moonIcon.style.display%20%3D%20\'block\'%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%2F%2F%202.%20Real-Time%20Clock%20%26%20Date%0A%20%20%20%20%20%20const%20realtimeClock%20%3D%20document.getElementById(\'realtimeClock\')%3B%0A%20%20%20%20%20%20const%20realtimeDate%20%3D%20document.getElementById(\'realtimeDate\')%3B%0A%0A%20%20%20%20%20%20function%20updateRealtimeClock()%20%7B%0A%20%20%20%20%20%20%20%20const%20now%20%3D%20new%20Date()%3B%0A%20%20%20%20%20%20%20%20const%20hours%20%3D%20String(now.getHours()).padStart(2%2C%20\'0\')%3B%0A%20%20%20%20%20%20%20%20const%20minutes%20%3D%20String(now.getMinutes()).padStart(2%2C%20\'0\')%3B%0A%20%20%20%20%20%20%20%20const%20seconds%20%3D%20String(now.getSeconds()).padStart(2%2C%20\'0\')%3B%0A%20%20%20%20%20%20%20%20realtimeClock.textContent%20%3D%20%60%24%7Bhours%7D%3A%24%7Bminutes%7D%3A%24%7Bseconds%7D%60%3B%0A%0A%20%20%20%20%20%20%20%20const%20options%20%3D%20%7B%20weekday%3A%20\'long\'%2C%20year%3A%20\'numeric\'%2C%20month%3A%20\'long\'%2C%20day%3A%20\'numeric\'%20%7D%3B%0A%20%20%20%20%20%20%20%20realtimeDate.textContent%20%3D%20now.toLocaleDateString(\'id-ID\'%2C%20options)%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20setInterval(updateRealtimeClock%2C%201000)%3B%0A%20%20%20%20%20%20updateRealtimeClock()%3B%0A%0A%20%20%20%20%20%20%2F%2F%203.%20Mobile%20Navigation%20Toggle%0A%20%20%20%20%20%20const%20menuToggle%20%3D%20document.getElementById(\'menuToggle\')%3B%0A%20%20%20%20%20%20const%20mobileMenu%20%3D%20document.getElementById(\'mobileMenu\')%3B%0A%20%20%20%20%20%20const%20mobileLinks%20%3D%20document.querySelectorAll(\'.mobile-link\')%3B%0A%0A%20%20%20%20%20%20menuToggle.addEventListener(\'click\'%2C%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20mobileMenu.classList.toggle(\'active\')%3B%0A%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20mobileLinks.forEach(link%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20link.addEventListener(\'click\'%2C%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20mobileMenu.classList.remove(\'active\')%3B%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20document.addEventListener(\'click\'%2C%20(e)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20if%20(!mobileMenu.contains(e.target)%20%26%26%20!menuToggle.contains(e.target))%20%7B%0A%20%20%20%20%20%20%20%20%20%20mobileMenu.classList.remove(\'active\')%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%2F%2F%204.%20Smooth%20Scroll%20Fade-Up%20Animation%0A%20%20%20%20%20%20const%20fadeElements%20%3D%20document.querySelectorAll(\'.fade-up\')%3B%0A%0A%20%20%20%20%20%20const%20observerOptions%20%3D%20%7B%0A%20%20%20%20%20%20%20%20root%3A%20null%2C%0A%20%20%20%20%20%20%20%20rootMargin%3A%20\'0px%200px%20-50px%200px\'%2C%0A%20%20%20%20%20%20%20%20threshold%3A%200.15%0A%20%20%20%20%20%20%7D%3B%0A%0A%20%20%20%20%20%20const%20observer%20%3D%20new%20IntersectionObserver((entries%2C%20obs)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20entries.forEach(entry%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20if%20(entry.isIntersecting)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20entry.target.classList.add(\'visible\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20obs.unobserve(entry.target)%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%7D%2C%20observerOptions)%3B%0A%0A%20%20%20%20%20%20fadeElements.forEach(el%20%3D%3E%20observer.observe(el))%3B%0A%0A%20%20%20%20%20%20%2F%2F%205.%20Music%20Player%20Logic%20%26%20Autoplay%20Fallback%0A%20%20%20%20%20%20const%20bgMusic%20%3D%20document.getElementById(\'bgMusic\')%3B%0A%20%20%20%20%20%20const%20musicWidget%20%3D%20document.getElementById(\'musicWidget\')%3B%0A%20%20%20%20%20%20const%20musicToggleBtn%20%3D%20document.getElementById(\'musicToggleBtn\')%3B%0A%20%20%20%20%20%20const%20playIcon%20%3D%20document.getElementById(\'playIcon\')%3B%0A%20%20%20%20%20%20const%20pauseIcon%20%3D%20document.getElementById(\'pauseIcon\')%3B%0A%20%20%20%20%20%20const%20musicStatusText%20%3D%20document.getElementById(\'musicStatusText\')%3B%0A%0A%20%20%20%20%20%20function%20playAudio()%20%7B%0A%20%20%20%20%20%20%20%20bgMusic.play().then(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20musicWidget.classList.remove(\'paused\')%3B%0A%20%20%20%20%20%20%20%20%20%20playIcon.style.display%20%3D%20\'none\'%3B%0A%20%20%20%20%20%20%20%20%20%20pauseIcon.style.display%20%3D%20\'block\'%3B%0A%20%20%20%20%20%20%20%20%20%20musicStatusText.textContent%20%3D%20\'PLAYING\'%3B%0A%20%20%20%20%20%20%20%20%7D).catch(err%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20console.log(%22Autoplay%20blocked%20by%20browser.%20Awaiting%20user%20interaction.%22)%3B%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20function%20pauseAudio()%20%7B%0A%20%20%20%20%20%20%20%20bgMusic.pause()%3B%0A%20%20%20%20%20%20%20%20musicWidget.classList.add(\'paused\')%3B%0A%20%20%20%20%20%20%20%20playIcon.style.display%20%3D%20\'block\'%3B%0A%20%20%20%20%20%20%20%20pauseIcon.style.display%20%3D%20\'none\'%3B%0A%20%20%20%20%20%20%20%20musicStatusText.textContent%20%3D%20\'PAUSED\'%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20playAudio()%3B%0A%0A%20%20%20%20%20%20const%20enableAutoplayOnInteraction%20%3D%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20if%20(bgMusic.paused)%20%7B%0A%20%20%20%20%20%20%20%20%20%20playAudio()%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20document.removeEventListener(\'click\'%2C%20enableAutoplayOnInteraction)%3B%0A%20%20%20%20%20%20%20%20document.removeEventListener(\'touchstart\'%2C%20enableAutoplayOnInteraction)%3B%0A%20%20%20%20%20%20%7D%3B%0A%0A%20%20%20%20%20%20document.addEventListener(\'click\'%2C%20enableAutoplayOnInteraction)%3B%0A%20%20%20%20%20%20document.addEventListener(\'touchstart\'%2C%20enableAutoplayOnInteraction)%3B%0A%0A%20%20%20%20%20%20musicToggleBtn.addEventListener(\'click\'%2C%20(e)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20e.stopPropagation()%3B%0A%20%20%20%20%20%20%20%20if%20(bgMusic.paused)%20%7B%0A%20%20%20%20%20%20%20%20%20%20playAudio()%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20pauseAudio()%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%2F%2F%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2F%2F%206.%20REAL-TIME%20DEVICE%20ONLINE%20%2F%20OFFLINE%20STATUS%20(VIA%20DISCORD%20LANYARD%20API)%0A%20%20%20%20%20%20%2F%2F%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20%20%20%20%20%2F%2F%20MASUKKAN%20DISCORD%20USER%20ID%20KAMU%20DI%20BAWAH%20INI%3A%0A%20%20%20%20%20%20const%20DISCORD_USER_ID%20%3D%20\'1500067856090664962\'%3B%0A%0A%20%20%20%20%20%20const%20statusDot%20%3D%20document.getElementById(\'statusDot\')%3B%0A%20%20%20%20%20%20const%20statusText%20%3D%20document.getElementById(\'statusText\')%3B%0A%0A%20%20%20%20%20%20function%20checkDeviceStatus()%20%7B%0A%20%20%20%20%20%20%20%20if%20(!DISCORD_USER_ID%20%7C%7C%20DISCORD_USER_ID%20%3D%3D%3D%20\'MASUKKAN_DISCORD_ID_KAMU_DISINI\')%20%7B%0A%20%20%20%20%20%20%20%20%20%20updateUI(\'offline\'%2C%20\'Set%20ID%20Discord\')%3B%0A%20%20%20%20%20%20%20%20%20%20return%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20fetch(%60https%3A%2F%2Fapi.lanyard.rest%2Fv1%2Fusers%2F%24%7BDISCORD_USER_ID%7D%60)%0A%20%20%20%20%20%20%20%20%20%20.then(res%20%3D%3E%20res.json())%0A%20%20%20%20%20%20%20%20%20%20.then(resData%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(resData.success)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20status%20%3D%20resData.data.discord_status%3B%20%2F%2F%20\'online\'%2C%20\'idle\'%2C%20\'dnd\'%2C%20\'offline\'%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20(status%20%3D%3D%3D%20\'online\')%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'online\'%2C%20\'Online\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(status%20%3D%3D%3D%20\'idle\')%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'idle\'%2C%20\'Away%20%2F%20Idle\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(status%20%3D%3D%3D%20\'dnd\')%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'idle\'%2C%20\'Do%20Not%20Disturb\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'offline\'%2C%20\'Offline\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'offline\'%2C%20\'Offline\')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%7D)%0A%20%20%20%20%20%20%20%20%20%20.catch(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20updateUI(\'offline\'%2C%20\'Offline\')%3B%0A%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20function%20updateUI(type%2C%20label)%20%7B%0A%20%20%20%20%20%20%20%20statusDot.className%20%3D%20\'badge-dot%20\'%20%2B%20(%0A%20%20%20%20%20%20%20%20%20%20type%20%3D%3D%3D%20\'online\'%20%3F%20\'status-online\'%20%3A%20%0A%20%20%20%20%20%20%20%20%20%20type%20%3D%3D%3D%20\'idle\'%20%3F%20\'status-idle\'%20%3A%20\'status-offline\'%0A%20%20%20%20%20%20%20%20)%3B%0A%20%20%20%20%20%20%20%20statusText.textContent%20%3D%20label%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%2F%2F%20Cek%20status%20secara%20otomatis%20setiap%205%20detik%0A%20%20%20%20%20%20checkDeviceStatus()%3B%0A%20%20%20%20%20%20setInterval(checkDeviceStatus%2C%205000)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E'));
-</script>
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lixzy Ganzx — Personal Site</title>
+  <meta name="description" content="Personal site of Lixzy Ganzx - Creative developer, designer, and digital builder based in Indonesia.">
+  
+  <!-- FAVICON SVG (Modern, Sharp, & High-Res untuk semua Browser / Tab) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%233b82f6'/><path d='M32 26V74H72V60H46V26H32Z' fill='%23ffffff'/><circle cx='68' cy='32' r='7' fill='%2393c5fd'/></svg>">
+  
+  <!-- Font Preconnect & Import (Plus Jakarta Sans & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. VARIABLES & THEMING
+       ========================================================================== */
+    :root {
+      /* Light Theme Colors */
+      --bg: #f9f8f6;
+      --bg-card: #ffffff;
+      --bg-secondary: #f1efe9;
+      --text: #18181b;
+      --text-muted: #64748b;
+      --border: #e4e4e7;
+      --border-hover: #a1a1aa;
+      --accent: #2563eb;
+      --accent-soft: rgba(37, 99, 235, 0.08);
+      --tag-bg: #eae8e1;
+      --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+      --radius: 14px;
+      --radius-sm: 8px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      /* Dark Theme Colors */
+      --bg: #0e0e11;
+      --bg-card: #16161a;
+      --bg-secondary: #1f1f24;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --border: #27272a;
+      --border-hover: #52525b;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.12);
+      --tag-bg: #222227;
+      --shadow: 0 4px 25px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ==========================================================================
+       2. BASE & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-size: 0.875rem;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 2.5rem;
+      line-height: 1.2;
+    }
+
+    /* ==========================================================================
+       3. NAVBAR & LOGO (IMAGE CUSTOM 325785.png)
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(249, 248, 246, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    [data-theme="dark"] .navbar {
+      background-color: rgba(14, 14, 17, 0.85);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.04em;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* DESAIN LOGO BARU DENGAN GAMBAR 325785.png */
+    .logo-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+      transition: var(--transition);
+    }
+
+    .logo:hover .logo-avatar {
+      transform: scale(1.08) rotate(-3deg);
+      border-color: var(--accent);
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .logo-text {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .logo-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--accent);
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--text);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .theme-toggle {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      transform: translateY(-150%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 999;
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+    }
+
+    .mobile-menu a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* ==========================================================================
+       4. HERO SECTION WITH SPLIT BLENDED BACKGROUND
+       ========================================================================== */
+    .hero {
+      position: relative;
+      padding-top: 9rem;
+      padding-bottom: 6rem;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg-photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background-image: url('309307.jpg');
+      background-size: cover;
+      background-position: center top;
+      z-index: 0;
+      -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0) 100%);
+      mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0) 100%);
+      filter: contrast(1.05) brightness(0.9);
+      transition: var(--transition);
+    }
+
+    .hero-bg-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, var(--bg) 40%, transparent 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .landscape-photo {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 380px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #a1a1aa;
+      transition: var(--transition);
+    }
+
+    /* INDIKATOR STATUS REAL-TIME (HIJAU / MERAH / KUNING) */
+    .status-online {
+      background-color: #22c55e !important;
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25) !important;
+    }
+
+    .status-offline {
+      background-color: #ef4444 !important;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25) !important;
+    }
+
+    .status-idle {
+      background-color: #f59e0b !important;
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25) !important;
+    }
+
+    /* REAL-TIME CLOCK WIDGET */
+    .clock-widget {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      width: fit-content;
+    }
+
+    .clock-time {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      line-height: 1;
+    }
+
+    .clock-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-greeting {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-name {
+      font-size: Clamp(2.75rem, 5vw, 4.25rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--text);
+      color: var(--bg);
+      border: 1px solid var(--text);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       5. FLOATING MUSIC PLAYER WIDGET
+       ========================================================================== */
+    .music-widget {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem 0.6rem 0.75rem;
+      border-radius: 100px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: var(--transition);
+    }
+
+    .music-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .music-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .music-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .music-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .music-status {
+      font-size: 0.7rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+    }
+
+    .sound-wave {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 12px;
+      margin-left: 0.25rem;
+    }
+
+    .sound-wave span {
+      width: 2px;
+      height: 100%;
+      background-color: var(--accent);
+      border-radius: 2px;
+      animation: wave 1.2s ease-in-out infinite;
+    }
+
+    .sound-wave span:nth-child(2) { animation-delay: 0.2s; }
+    .sound-wave span:nth-child(3) { animation-delay: 0.4s; }
+
+    .music-widget.paused .sound-wave span {
+      animation: none;
+      height: 3px;
+    }
+
+    @keyframes wave {
+      0%, 100% { height: 3px; }
+      50% { height: 12px; }
+    }
+
+    /* ==========================================================================
+       6. ABOUT ME SECTION & FOTO SKALA 1:1
+       ========================================================================== */
+    .photo-1x1-wrapper {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto 2.5rem auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-1x1-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .about-bio {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 2.5rem;
+      font-weight: 500;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-card {
+      background: var(--bg-secondary);
+      padding: 1.25rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+
+    .info-card:hover {
+      border-color: var(--border);
+    }
+
+    .info-label {
+      font-size: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .info-value {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .personal-note {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      border-left: 2px solid var(--accent);
+      padding-left: 1rem;
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* ==========================================================================
+       7. INTERESTS & SKILLS
+       ========================================================================== */
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .interest-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      transition: var(--transition);
+    }
+
+    .interest-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+    }
+
+    .interest-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text);
+    }
+
+    .interest-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .interest-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Skills Chips */
+    .skills-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+
+    .skills-group {
+      margin-bottom: 1.75rem;
+    }
+
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-group-title {
+      font-size: 0.85rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+    }
+
+    .chips-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .chip {
+      background: var(--tag-bg);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .chip:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       8. JOURNEY / TIMELINE
+       ========================================================================== */
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: calc(-1.5rem - 6px);
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--bg);
+    }
+
+    .timeline-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       9. FUN FACTS
+       ========================================================================== */
+    .fun-facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .fact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: var(--transition);
+    }
+
+    .fact-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    .fact-icon {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       10. CONTACT / CONNECT
+       ========================================================================== */
+    .contact-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-title {
+      font-size: Clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1.4rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: var(--transition);
+    }
+
+    .social-btn:hover {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       11. FOOTER
+       ========================================================================== */
+    footer {
+      padding: 2.5rem 0 5rem 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    /* ==========================================================================
+       12. ANIMATIONS & UTILS
+       ========================================================================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       13. RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 868px) {
+      .hero-bg-photo {
+        width: 100%;
+        opacity: 0.25;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
+    @media (max-width: 576px) {
+      section {
+        padding: 3.5rem 0;
+      }
+
+      .hero {
+        padding-top: 7rem;
+      }
+
+      .about-box, .skills-container, .contact-box {
+        padding: 1.75rem 1.25rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .social-grid {
+        flex-direction: column;
+      }
+
+      .social-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .music-widget {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ELEMENT AUDIO UNTUK MUSIK & AUTOPLAY -->
+  <audio id="bgMusic" src="https://files.catbox.moe/jzjb75.mp3" loop preload="auto"></audio>
+
+  <!-- FLOATING MUSIC PLAYER WIDGET -->
+  <div class="music-widget paused" id="musicWidget">
+    <button class="music-btn" id="musicToggleBtn" aria-label="Play/Pause Music">
+      <!-- Play Icon -->
+      <svg id="playIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      <!-- Pause Icon -->
+      <svg id="pauseIcon" style="display:none;" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+    </button>
+    <div class="music-info">
+      <span class="music-title">Background Track</span>
+      <span class="music-status" id="musicStatusText">PAUSED</span>
+    </div>
+    <div class="sound-wave">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      
+      <!-- LOGO BRAND (MENGGUNAKAN GAMBAR LOGO BARU 325785.png) -->
+      <a href="#" class="logo">
+        <img src="325785.png" alt="Lixzy Logo" class="logo-avatar">
+        <span class="logo-text">LIXZY<span class="logo-dot"></span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#interests" class="nav-link">Interests</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <!-- Sun Icon -->
+          <svg id="sunIcon" style="display:none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <!-- Moon Icon -->
+          <svg id="moonIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+
+        <button class="hamburger" id="menuToggle" aria-label="Open Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#interests" class="mobile-link">Interests</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HERO SECTION WITH SPLIT BLENDED BACKGROUND -->
+  <section class="hero" id="home">
+    <div class="hero-bg-photo"></div>
+    <div class="hero-bg-shade"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content fade-up">
+        
+        <!-- FOTO LANDSCAPE LIXZY STORE -->
+        <img src="https://files.catbox.moe/2z9cy0.png" alt="Lixzy Store Landscape Banner" class="landscape-photo">
+
+        <div class="badges-row">
+          <!-- INDIKATOR REAL-TIME STATUS DEVICE (ONLINE/OFFLINE) -->
+          <span class="badge" id="liveStatusBadge">
+            <span class="badge-dot status-offline" id="statusDot"></span>
+            <span id="statusText">Checking...</span>
+          </span>
+
+          <span class="badge">
+            <span class="badge-dot status-online"></span>
+            Available for projects
+          </span>
+          <span class="badge">
+            📍 Based in Indonesia
+          </span>
+        </div>
+
+        <!-- REAL-TIME CLOCK & DATE WIDGET -->
+        <div class="clock-widget">
+          <span id="realtimeClock" class="clock-time">00:00:00</span>
+          <span id="realtimeDate" class="clock-date">Loading date...</span>
+        </div>
+
+        <p class="hero-greeting">HELLO, I'M</p>
+        <h1 class="hero-name">LIXZY GANZX</h1>
+        <p class="hero-tagline">just a person building things, exploring ideas, and enjoying the process.</p>
+
+        <div class="hero-cta">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="container fade-up">
+      <div class="section-title">01 // ABOUT ME</div>
+      <h2 class="section-heading">WHO I AM</h2>
+
+      <!-- FOTO SKALA 1:1 DI ATAS ABOUT ME -->
+      <div class="photo-1x1-wrapper">
+        <img src="https://files.catbox.moe/5jc6cj.png" alt="Profile 1:1 Photo">
+      </div>
+
+      <div class="about-box">
+        <p class="about-bio">
+          I'm a creative person who enjoys exploring technology, design, digital projects, and new ideas. I like turning simple ideas into something useful, interesting, and visually clean.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-label">Name</div>
+            <div class="info-value">Lixzy Ganzx</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Location</div>
+            <div class="info-value">Indonesia</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Focus</div>
+            <div class="info-value">Digital & Creative</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Interests</div>
+            <div class="info-value">Tech, Design, Editing</div>
+          </div>
+        </div>
+
+        <p class="personal-note">
+          "I believe good output comes from curiosity, iteration, and keeping things simple rather than overcomplicating."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY INTERESTS -->
+  <section id="interests">
+    <div class="container fade-up">
+      <div class="section-title">02 // INTERESTS</div>
+      <h2 class="section-heading">WHAT I DO & EXPLORE</h2>
+
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Web Development</h3>
+            <p class="interest-desc">Building responsive, clean, and functional websites with modern standards.</p>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 7.5"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Graphic Design</h3>
+            <p class="interest-desc">Crafting clean layouts, digital posters, and visual identities.</p>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Video Editing</h3>
+            <p class="interest-desc">Piecing together engaging video clips with aesthetic pacing and atmosphere.</p>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Technology</h3>
+            <p class="interest-desc">Keeping up with new tools, software updates, and modern tech workflows.</p>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Digital Projects</h3>
+            <p class="interest-desc">Experimenting with interactive ideas, mini web apps, and digital assets.</p>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <h3 class="interest-title">Creative Content</h3>
+            <p class="interest-desc">Creating social media media pieces, graphics, and simple storytelling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container fade-up">
+      <div class="section-title">03 // SKILLS & TOOLS</div>
+      <h2 class="section-heading">MY TOOLKIT</h2>
+
+      <div class="skills-container">
+        <div class="skills-group">
+          <div class="skills-group-title">// Development & Web</div>
+          <div class="chips-flex">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Responsive Layouts</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">// Design & Creative</div>
+          <div class="chips-flex">
+            <span class="chip">UI Design</span>
+            <span class="chip">Graphic Design</span>
+            <span class="chip">Video Editing</span>
+            <span class="chip">Color Theory</span>
+            <span class="chip">Typography</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY JOURNEY -->
+  <section id="journey">
+    <div class="container fade-up">
+      <div class="section-title">04 // EXPERIENCE</div>
+      <h2 class="section-heading">MY JOURNEY</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <h3 class="timeline-title">Exploring Digital Creativity</h3>
+          <p class="timeline-desc">Started experimenting with graphic design, basic video editing, and digital content tools.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2025</div>
+          <h3 class="timeline-title">Learning Web Development</h3>
+          <p class="timeline-desc">Dived into front-end foundations: HTML, CSS, JavaScript, and responsive design principles.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026</div>
+          <h3 class="timeline-title">Building Personal Projects</h3>
+          <p class="timeline-desc">Actively crafting custom web apps, portfolio designs, and exploring full project workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUN FACTS -->
+  <section id="fun-facts">
+    <div class="container fade-up">
+      <div class="section-title">05 // RANDOM</div>
+      <h2 class="section-heading">FUN FACTS</h2>
+
+      <div class="fun-facts-grid">
+        <div class="fact-card">
+          <svg class="fact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          <span>probably listening to music while working</span>
+        </div>
+
+        <div class="fact-card">
+          <svg class="fact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <span>likes clean design & subtle details</span>
+        </div>
+
+        <div class="fact-card">
+          <svg class="fact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <span>always trying something new</span>
+        </div>
+
+        <div class="fact-card">
+          <svg class="fact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <span>coffee + late night ideas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL / CONTACT -->
+  <section id="contact">
+    <div class="container fade-up">
+      <div class="contact-box">
+        <h2 class="contact-title">LET'S CONNECT.</h2>
+        <p class="contact-desc">Have an idea, project, or just want to say hi?</p>
+
+        <div class="social-grid">
+          <a href="https://wa.me/6281260261522" target="_blank" rel="noopener" class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            WhatsApp
+          </a>
+
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            TikTok
+          </a>
+
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+
+          <a href="mailto:hello@example.com" class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Lixzy Ganzx</p>
+      <p>made with curiosity & a little caffeine.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Dark/Light Mode Switcher
+      const themeToggle = document.getElementById('themeToggle');
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+      const htmlEl = document.documentElement;
+
+      const savedTheme = localStorage.getItem('lh_theme');
+      if (savedTheme) {
+        htmlEl.setAttribute('data-theme', savedTheme);
+      } else {
+        htmlEl.setAttribute('data-theme', 'dark');
+      }
+      updateThemeIcons();
+
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlEl.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', newTheme);
+        localStorage.setItem('lh_theme', newTheme);
+        updateThemeIcons();
+      });
+
+      function updateThemeIcons() {
+        const currentTheme = htmlEl.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        } else {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        }
+      }
+
+      // 2. Real-Time Clock & Date
+      const realtimeClock = document.getElementById('realtimeClock');
+      const realtimeDate = document.getElementById('realtimeDate');
+
+      function updateRealtimeClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        realtimeClock.textContent = `${hours}:${minutes}:${seconds}`;
+
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        realtimeDate.textContent = now.toLocaleDateString('id-ID', options);
+      }
+
+      setInterval(updateRealtimeClock, 1000);
+      updateRealtimeClock();
+
+      // 3. Mobile Navigation Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          mobileMenu.classList.remove('active');
+        }
+      });
+
+      // 4. Smooth Scroll Fade-Up Animation
+      const fadeElements = document.querySelectorAll('.fade-up');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.15
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      fadeElements.forEach(el => observer.observe(el));
+
+      // 5. Music Player Logic & Autoplay Fallback
+      const bgMusic = document.getElementById('bgMusic');
+      const musicWidget = document.getElementById('musicWidget');
+      const musicToggleBtn = document.getElementById('musicToggleBtn');
+      const playIcon = document.getElementById('playIcon');
+      const pauseIcon = document.getElementById('pauseIcon');
+      const musicStatusText = document.getElementById('musicStatusText');
+
+      function playAudio() {
+        bgMusic.play().then(() => {
+          musicWidget.classList.remove('paused');
+          playIcon.style.display = 'none';
+          pauseIcon.style.display = 'block';
+          musicStatusText.textContent = 'PLAYING';
+        }).catch(err => {
+          console.log("Autoplay blocked by browser. Awaiting user interaction.");
+        });
+      }
+
+      function pauseAudio() {
+        bgMusic.pause();
+        musicWidget.classList.add('paused');
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+        musicStatusText.textContent = 'PAUSED';
+      }
+
+      playAudio();
+
+      const enableAutoplayOnInteraction = () => {
+        if (bgMusic.paused) {
+          playAudio();
+        }
+        document.removeEventListener('click', enableAutoplayOnInteraction);
+        document.removeEventListener('touchstart', enableAutoplayOnInteraction);
+      };
+
+      document.addEventListener('click', enableAutoplayOnInteraction);
+      document.addEventListener('touchstart', enableAutoplayOnInteraction);
+
+      musicToggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (bgMusic.paused) {
+          playAudio();
+        } else {
+          pauseAudio();
+        }
+      });
+
+      // ==========================================================================
+      // 6. REAL-TIME DEVICE ONLINE / OFFLINE STATUS (VIA DISCORD LANYARD API)
+      // ==========================================================================
+      const DISCORD_USER_ID = '1500067856090664962';
+
+      const statusDot = document.getElementById('statusDot');
+      const statusText = document.getElementById('statusText');
+
+      function checkDeviceStatus() {
+        if (!DISCORD_USER_ID || DISCORD_USER_ID === 'MASUKKAN_DISCORD_ID_KAMU_DISINI') {
+          updateUI('offline', 'Set ID Discord');
+          return;
+        }
+
+        fetch(`https://api.lanyard.rest/v1/users/${DISCORD_USER_ID}`)
+          .then(res => res.json())
+          .then(resData => {
+            if (resData.success) {
+              const status = resData.data.discord_status;
+              
+              if (status === 'online') {
+                updateUI('online', 'Online');
+              } else if (status === 'idle') {
+                updateUI('idle', 'Away / Idle');
+              } else if (status === 'dnd') {
+                updateUI('idle', 'Do Not Disturb');
+              } else {
+                updateUI('offline', 'Offline');
+              }
+            } else {
+              updateUI('offline', 'Offline');
+            }
+          })
+          .catch(() => {
+            updateUI('offline', 'Offline');
+          });
+      }
+
+      function updateUI(type, label) {
+        statusDot.className = 'badge-dot ' + (
+          type === 'online' ? 'status-online' : 
+          type === 'idle' ? 'status-idle' : 'status-offline'
+        );
+        statusText.textContent = label;
+      }
+
+      checkDeviceStatus();
+      setInterval(checkDeviceStatus, 5000);
+    });
+  </script>
+</body>
+</html>
